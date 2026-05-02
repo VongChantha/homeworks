@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List-Management</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/student.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Student List</h3>
+        <hr>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="student_list.html">Student List</a></li>
+            <li class="breadcrumb-item active">Student List by jQuery</li>
+            <li class="breadcrumb-item"><a href="student_list2.html">Student List 2</a></li>
+            <li class="breadcrumb-item"><a href="student_list3.html">Student List 3</a></li>
+        </ul>
+
+        <table id="myTable" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Student Code</th>
+                    <th>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                FullName
+                            </div>
+                            <div>
+                                [Sex]
+                            </div>
+                        </div>
+                    </th>
+                    <th class="text-center">Contact</th>
+                    <th class="text-center">On/Off</th>
+                    <th class="text-center">Delete</th>
+                    <th class="text-center">Edit</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Existing rows can go here -->
+            </tbody>
+        </table>
+    <!-- The Modal -->
+    <div class="modal fade" id="ModalOnOff">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal OnOff</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     <!-- The Modal ModalDelete-->
+    <div class="modal fade" id="ModalDelete">
+        <div class="modal-dialog">
+            <div class="modal-content class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Delete</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Are you sure to delete this record?
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="BtDeleteYes" style="width:100px">Yes</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="width:100px">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal ModalEdit-->
+    <div class="modal fade" id="ModalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Edit</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" id="MobalBody_Edit">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+    </div>
+</body>
+</html>
+<script src="js/student_list1.js"></script>

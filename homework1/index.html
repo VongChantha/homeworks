@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Function</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Check Validation</h2>
+
+    <!-- Number -->
+    <label>Check Number</label>
+    <input type="text" id="numberInput">
+    <button onclick="validate('number')">Check</button>
+    <div id="numberResult" class="result"></div>
+
+    <!-- Positive Number -->
+    <label>Check Positive Number</label>
+    <input type="text" id="positiveNumberInput">
+    <button onclick="validate('positiveNumber')">Check</button>
+    <div id="positiveNumberResult" class="result"></div>
+
+    <!-- Decimal -->
+    <label>Check Decimal</label>
+    <input type="text" id="decimalInput">
+    <button onclick="validate('decimal')">Check</button>
+    <div id="decimalResult" class="result"></div>
+
+    <!-- Positive Decimal -->
+    <label>Check Positive Decimal</label>
+    <input type="text" id="positiveDecimalInput">
+    <button onclick="validate('positiveDecimal')">Check</button>
+    <div id="positiveDecimalResult" class="result"></div>
+
+    <!-- Email -->
+    <label>Check Email</label>
+    <input type="text" id="emailInput">
+    <button onclick="validate('email')">Check</button>
+    <div id="emailResult" class="result"></div>
+
+    <!-- Boolean -->
+    <label>Check Boolean</label>
+    <input type="text" id="booleanInput" placeholder="true or false">
+    <button onclick="validate('boolean')">Check</button>
+    <div id="booleanResult" class="result"></div>
+
+  </div>
+
+  <div style="margin: 30px auto 0; width: 420px;">
+  <button
+    onclick="window.location.href='../homework2/index.html'"
+    style="width: 100%;"
+    >Next</button>
+  </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

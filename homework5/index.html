@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List-Management</title>
+    <link rel="stylesheet" href="../homework5/style/css/bootstrap.min.css">
+    <script src="../homework5/style/js/bootstrap.bundle.min.js"></script>
+    <script src="../homework5/js/student.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Student List</h3>
+        <hr>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item "><a href="student_list1.html">Student List</a></li>
+            <li class="breadcrumb-item"><a href="student_list2.html">Student List 2</a></li>
+            <li class="breadcrumb-item"><a href="student_list3.html">Student List 3</a></li>
+            <li class="breadcrumb-item active">jQueryList</li>
+        </ul>
+        <div class="d-flex justify-content-end mb-3">
+            <a class="btn btn-primary" href="../homework6/AsyncFunctionWithFetch1.html">Next</a>
+        </div>
+
+        <table id="myTable" class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Student Code</th>
+                    <th>
+                        <div class="d-flex justify-content-between">
+                            <div>FullName</div>
+                            <div>[Sex]</div>
+                        </div>
+                    </th>
+                    <th class="text-center">Contact</th>
+                    <th class="text-center">On/Off</th>
+                    <th class="text-center">Delete</th>
+                    <th class="text-center">Edit</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                </tbody>
+        </table>
+    </div>
+
+   <div class="modal fade" id="ModalOnOff">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal On/Off</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to toggle this student's status?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" id="BtOnOffConfirm">Confirm</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="modal fade" id="ModalDelete">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Delete</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure to delete this student?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="BtDeleteConfirm">Yes</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="modal fade" id="ModalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Edit / Add</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="student_code" class="form-control mb-2" placeholder="Student Code">
+                    <input type="text" id="first_name" class="form-control mb-2" placeholder="First Name">
+                    <input type="text" id="last_name" class="form-control mb-2" placeholder="Last Name">
+                    <input type="text" id="gender" class="form-control mb-2" placeholder="Gender">
+                    <input type="text" id="contact" class="form-control mb-2" placeholder="Contact">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="BtSave">Save / Add</button>
+                    <button type="button" class="btn btn-primary" id="BtEditConfirm">Update</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../homework5/js/jQuery.js"></script>
+</body>
+</html>

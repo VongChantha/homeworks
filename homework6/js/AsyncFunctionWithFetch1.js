@@ -10,7 +10,7 @@ function showSpinner(){
 }
 async function loadTable() {
     showSpinner();
-    const url = "cambodia.json";
+    const url = "//universities.hipolabs.com/search?country=cambodia";
     try {
         const response = await fetch(url);
         if (!response.ok) {
